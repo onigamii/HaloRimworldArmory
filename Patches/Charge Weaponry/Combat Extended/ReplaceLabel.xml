@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+
+    <operations>
+      <li Class="CombatExtended.PatchOperationFindMod">
+        <modName>HALO: Rimworld Auxiliary Charge Armory</modName>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName ="HRACA_Gun_Charge_Pistol"]/label</xpath>
+
+        <value>
+          <label>M6C SOCOM</label>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName ="HRACA_Gun_Charge_Magnum"]/label</xpath>
+
+        <value>
+          <label>M6G Magnum</label>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName ="HRACA_Gun_Charge_SMG"]/label</xpath>
+
+        <value>
+          <label>M7 SMG</label>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName ="HRACA_Gun_Charge_Shotgun"]/label</xpath>
+
+        <value>
+          <label>M45 Tactical</label>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName ="HRACA_Gun_Charge_Carbine"]/label</xpath>
+
+        <value>
+          <label>MA5K Carbine</label>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName ="HRACA_Gun_Charge_Rifle"]/label</xpath>
+
+        <value>
+          <label>MA37 ICWS</label>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName ="HRACA_Gun_Charge_BR"]/label</xpath>
+
+        <value>
+          <label>BR55</label>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName ="HRACA_Gun_Charge_Sniper"]/label</xpath>
+
+        <value>
+          <label>SRS99-AMSR</label>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName ="HRACA_Gun_Charge_SAW"]/label</xpath>
+
+        <value>
+          <label>M739 SAW</label>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+
+</Patch>

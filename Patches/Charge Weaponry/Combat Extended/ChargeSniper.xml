@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+
+    <operations>
+      <li Class="CombatExtended.PatchOperationFindMod">
+        <modName>HALO: Rimworld Auxiliary Charge Armory</modName>
+      </li>
+
+      <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>HRACA_Gun_Charge_Sniper</defName>
+
+        <statBases>
+          <WorkToMake>48000</WorkToMake>
+          <SightsEfficiency>2.6</SightsEfficiency>
+          <ShotSpread>0.5</ShotSpread>
+          <SwayFactor>1.9</SwayFactor>
+          <Bulk>13.0</Bulk>
+          <Mass>7.0</Mass>
+          <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+        </statBases>
+
+        <Properties>
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_8x35mmCharged</defaultProjectile>
+          <warmupTime>3.90</warmupTime>
+          <range>86</range>
+          <soundCast>HRACA_Shot_Charge_Sniper</soundCast>
+          <soundCastTail>GunTail_Heavy</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+        </Properties>
+
+        <AmmoUser>
+          <magazineSize>4</magazineSize>
+          <reloadTime>4</reloadTime>
+          <ammoSet>AmmoSet_8x35mmCharged</ammoSet>
+        </AmmoUser>
+
+        <FireModes>
+          <aiUseBurstMode>FALSE</aiUseBurstMode>
+          <aiAimMode>AimedShot</aiAimMode>
+        </FireModes>
+      </li>
+    </operations>
+  </Operation>
+
+</Patch>

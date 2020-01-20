@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+
+    <operations>
+      <li Class="CombatExtended.PatchOperationFindMod">
+        <modName>HALO: Rimworld Auxiliary Charge Armory</modName>
+      </li>
+
+      <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>HRACA_Gun_Charge_Magnum</defName>
+
+        <statBases>
+          <WorkToMake>10000</WorkToMake>
+          <SightsEfficiency>0.7</SightsEfficiency>
+          <ShotSpread>0.5</ShotSpread>
+          <SwayFactor>1.10</SwayFactor>
+          <Bulk>2.10</Bulk>
+          <Mass>1.05</Mass>
+          <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+        </statBases>
+
+        <Properties>
+          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_6x24mmCharged</defaultProjectile>
+          <warmupTime>0.6</warmupTime>
+          <range>18</range>
+          <soundCast>HRACA_Shot_Charge_Magnum</soundCast>
+          <soundCastTail>GunTail_Light</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+        </Properties>
+
+        <AmmoUser>
+          <magazineSize>8</magazineSize>
+          <reloadTime>1.90</reloadTime>
+          <ammoSet>AmmoSet_6x24mmCharged</ammoSet>
+        </AmmoUser>
+
+        <FireModes>
+          <aiUseBurstMode>FALSE</aiUseBurstMode>
+          <aiAimMode>AimedShot</aiAimMode>
+        </FireModes>
+
+        <weaponTags>
+          <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+      </li>
+    </operations>
+  </Operation>
+
+</Patch>
