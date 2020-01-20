@@ -46,7 +46,7 @@
           <ammoSet>AmmoSet_105mmShapedCharge</ammoSet>
         </AmmoUser>
 
-        <FireModes>>
+        <FireModes>
           <aiAimMode>AimedShot</aiAimMode>
         </FireModes>
       </li>

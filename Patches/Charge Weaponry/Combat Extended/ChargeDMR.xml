@@ -28,7 +28,7 @@
           <defaultProjectile>Bullet_8x35mmCharged</defaultProjectile>
           <warmupTime>1.2</warmupTime>
           <range>65</range>
-          <soundCast>HRACA_Gun_Charge_DMR</soundCast>
+          <soundCast>HRACA_Shot_Charge_DMR</soundCast>
           <soundCastTail>GunTail_Medium</soundCastTail>
           <muzzleFlashScale>9</muzzleFlashScale>
         </Properties>
